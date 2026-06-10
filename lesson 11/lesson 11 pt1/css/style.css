@@ -1,0 +1,36 @@
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    background-color: rgb(180, 196, 196);
+}
+
+ /* //Margins with 1 parametres
+p{
+    margin: 100px 150px 60px 80px;
+}
+
+  //Margins with 1 parametres
+p{
+    margin: 100px;
+}
+
+  //Margins with 3 parametres
+p{
+    margin: 100px 200px 50px;
+} 
+  */
+
+ div{
+    /* padding: 100px 50px 200px 80px;  */
+
+     width: 150px;
+     margin: 50px;
+     border: 15px solid green;
+     background-color: antiquewhite;
+     padding: 50px;
+
+ }
+
