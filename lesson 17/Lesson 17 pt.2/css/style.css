@@ -1,0 +1,11 @@
+:root{
+    --primary-color:blue ;
+    --secondary-color:#ffff;
+    --padding: 20%;
+}
+
+.h1{
+     background-color: var(--primary-color);
+     color: var(--secondary-color);
+     padding: var(--padding);
+}
