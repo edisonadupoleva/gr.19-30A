@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+#section-1{
+    background-color: pink;
+    height: 600px;
+}
+
+.container{
+    margin-left: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+header{
+    padding: 55px;
+    justify-content:space-around;
+    display: flex;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px 16px;
+}
+
+nav ul li.active{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.main-heading{
+    margin-top: 148px;
+    text-align: center;
+}
