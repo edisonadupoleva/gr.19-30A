@@ -1,94 +1,355 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-  body{
-     font-family: Arial;
-     background: #fff5f7;
-     color: #333;
-  }
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9f7;
+    color: #3d292e;
+}
 
-  header{
-    background: #d98b9c;
-    padding: 20px;
+header {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-  }
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    border-bottom: 1px solid #ead8d5;
+}
 
-  header h1 nav a{
-    color: white;
-  }
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
 
-  nav a{
+nav a {
+    color: #3d292e;
     text-decoration: none;
-    margin: 10px;
-  }
+    margin-left: 25px;
+    font-weight: bold;
+}
 
-  .main{
-    text-align: center;
-    padding: 80px 20px;
-    background: #f8dce2;
-  }
+nav a:hover {
+    color: #b56b7b;
+}
 
- .main h2{
-    color: #a94f68;
-    font-size: 35px;
-  }
+.home {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 9%;
+    background: #f5e3e1;
+}
 
-  .main p{
-    margin: 15px;
-  }
+.home-text {
+    width: 50%;
+}
 
-  button{
-    background: #a94f68;
+.home-text p:first-child,
+.collection > p,
+.story-text > p,
+.categories > p,
+.message > p,
+.page-title > p {
+    color: #a45b6d;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.home-text h2 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.home-text p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.home-text a,
+.message a {
+    display: inline-block;
+    background: #3d292e;
     color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
-  }
+    text-decoration: none;
+    padding: 13px 24px;
+}
 
-  section{
-    padding: 50px 10%;
+.home-text a:hover,
+.message a:hover {
+    background: #a45b6d;
+}
+
+.home-photo {
+    width: 45%;
+}
+
+.home-photo img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 250px 250px 15px 15px;
+}
+
+.collection {
+    padding: 80px 8%;
     text-align: center;
-  }
+}
 
-  .products{
+.collection h2,
+.categories h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.jewelry-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.jewelry-item {
+    width: 30%;
+    background: white;
+    padding-bottom: 25px;
+    border: 1px solid #ead8d5;
+}
+
+.jewelry-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.jewelry-item h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin: 18px 0 8px;
+}
+
+.jewelry-item p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.jewelry-item a,
+.category-list a,
+.story-text a {
+    color: #a45b6d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 12%;
+    background: #f5e3e1;
+}
+
+.story-photo {
+    width: 45%;
+}
+
+.story-photo img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.story-text {
+    width: 50%;
+}
+
+.story-text h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.story-text p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.categories {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.category-list {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-top: 25px;
-  }
+    margin-top: 40px;
+}
 
-  .item{
+.category-list div {
+    width: 270px;
+    padding: 35px 20px;
     background: white;
-    width: 280px;
-    padding: 15px;
-    border-radius: 15px;
-  }
+    border: 1px solid #ead8d5;
+}
 
-  .item img{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+.category-list span {
+    font-size: 35px;
+}
 
-  .item h3{
-    color: #a94f68;
-    margin: 12px;
-  }
+.category-list h3 {
+    font-family: Georgia, serif;
+    margin: 15px 0;
+}
 
-  footer{
-    background: #d98b9c;
-    color: white;
+.message {
     text-align: center;
-    padding: 15px;
-  }
+    padding: 90px 20%;
+    background: #3d292e;
+    color: white;
+}
 
-  nav a:hover{
-    color: #ffd6df;
-  }
-    
+.message h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 15px 0 25px;
+}
+
+.message a {
+    background: white;
+    color: #3d292e;
+}
+
+.page-title {
+    text-align: center;
+    padding: 75px 20px;
+    background: #f5e3e1;
+}
+
+.page-title h2 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    margin: 12px 0;
+}
+
+.products {
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.products .jewelry-item {
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 12%;
+}
+
+.about-photo {
+    width: 45%;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.about-text p {
+    line-height: 1.7;
+    margin: 18px 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 90px 10%;
+    background: #f5e3e1;
+}
+
+.contact-text {
+    width: 40%;
+}
+
+.contact-text h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+form {
+    width: 400px;
+    background: white;
+    padding: 35px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #d9c3c0;
+    font-family: Arial;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #3d292e;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #24191c;
+    color: white;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
