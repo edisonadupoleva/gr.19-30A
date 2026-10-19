@@ -50,7 +50,7 @@ nav a:hover {
     width: 50%;
 }
 
-.home-text p:first-child,
+.home-text p,
 .collection > p,
 .story-text > p,
 .categories > p,
@@ -242,9 +242,8 @@ nav a:hover {
 
 .products {
     padding: 70px 8%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
+    display: flex;
+    gap: 10px;
 }
 
 .products .jewelry-item {
@@ -352,4 +351,3 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
-
